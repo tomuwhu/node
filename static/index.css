@@ -12,6 +12,7 @@ div#o {
     border-radius: 6px;
     background-color: antiquewhite;
     user-select: none;
+    width: 50px;
 }
 button {
     cursor: pointer;
