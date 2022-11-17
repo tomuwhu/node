@@ -9,6 +9,9 @@ npm start
 ```
 
 Szerver oldal:
+
+[server.js](https://github.com/tomuwhu/node/blob/main/server.js)
+
 ```javascript
 const express = require('express')
 const app = express()
@@ -27,7 +30,7 @@ app.listen(port, () => {
 
 Kliens oldal:
 
-index.js:
+[static/index.js:](https://github.com/tomuwhu/node/blob/main/static/index.js)
 
 ```javascript
 $(() => {
@@ -39,7 +42,7 @@ $(() => {
     } )
 })
 ```
-index.html:
+[static/index.html:](https://github.com/tomuwhu/node/blob/main/static/index.html)
 
 ```html
 <!DOCTYPE html>
@@ -58,7 +61,8 @@ index.html:
 </body>
 </html>
 ```
-index.css
+
+[static/index.css](https://github.com/tomuwhu/node/blob/main/static/index.css)
 
 ```css
 body {
