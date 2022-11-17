@@ -5,3 +5,14 @@ body {
 div#o {
     font-size: 30px;
 }
+#i1o {
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 6px;
+    background-color: antiquewhite;
+    user-select: none;
+}
+button {
+    cursor: pointer;
+}
