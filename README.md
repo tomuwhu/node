@@ -26,6 +26,9 @@ app.listen(port, () => {
 ```
 
 Kliens oldal:
+
+index.js:
+
 ```javascript
 $(() => {
     $("#b1").click( e => {
@@ -36,6 +39,7 @@ $(() => {
     } )
 })
 ```
+index.html:
 
 ```html
 <!DOCTYPE html>
@@ -54,6 +58,7 @@ $(() => {
 </body>
 </html>
 ```
+index.css
 
 ```css
 body {
