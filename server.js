@@ -9,10 +9,8 @@ app.use(session({
   resave: true, saveUninitialized: true
 }))
 app.post('/', (req, res) => {
-    console.log(req.session.p)
-    p = Math.round(Math.random()*10+1) + req.session.p
+    p = Math.round(Math.random()*10+1) + ( req.session.p || 100 )
     req.session.p = p
-    console.log(req.body, p)
     res.send({x: Number(req.body.x) + p})
 })
 app.listen(port, () => {
