@@ -9,9 +9,11 @@ app.use(session({
   resave: true, saveUninitialized: true
 }))
 app.post('/', (req, res) => {
-    p = Math.round(Math.random()*10+1) + ( req.session.p || 100 )
+    p = Math.round(Math.random()*10+1) + 
+        Number(req.body.x) + 
+        ( req.session.p || 100 )
     req.session.p = p
-    res.send({x: Number(req.body.x) + p})
+    res.send({x: p})
 })
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
