@@ -36,3 +36,31 @@ $(() => {
     } )
 })
 ```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express & jQuery</title>
+</head>
+<body>
+    <button id="b1">katt</button>
+    <div id="o">-</div>
+</body>
+</html>
+```
+
+```css
+body {
+    background-color: aquamarine;
+}
+div#o {
+    text-align: center;
+    font-size: 30px;
+}
+```
