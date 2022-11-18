@@ -1,5 +1,5 @@
 const express = require('express')
-var session = require('express-session')
+const session = require('express-session')
 const app = express()
 const port = 3000
 app.use(express.static('static'))
@@ -9,10 +9,8 @@ app.use(session({
   resave: true, saveUninitialized: true
 }))
 app.post('/', (req, res) => {
-  n = Math.round(Math.random()*(2**Number(req.body.x))+1)
+  n = Math.round(Math.random()*(2**Number(req.body.x)-1)+1)
   req.session.p = n + req.session.p || 100
   res.send({x: req.session.p})
 })
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`)
-})
+app.listen(port, () => console.log(`http://localhost:${port}`))
