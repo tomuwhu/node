@@ -10,7 +10,7 @@ app.use(session({
 }))
 app.post('/', (req, res) => {
   n = Math.round(Math.random()*(2**Number(req.body.x)-1)+1)
-  req.session.p = n + req.session.p || 100
+  req.session.p = n + req.session.p || 1
   res.send({x: req.session.p})
 })
 app.listen(port, () => console.log(`http://localhost:${port}`))
