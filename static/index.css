@@ -4,16 +4,22 @@ body {
 }
 div#o {
     font-size: 30px;
+    color: rgb(30, 78, 106);
+    text-shadow: 1px 1px 4px gray;
+    background-color: rgb(169, 249, 249);
+    box-shadow: 1px 1px 4px inset black;
 }
 #i1o {
     display: inline-block;
-    padding: 10px;
+    padding: 4px;
     box-shadow: 1px 1px 4px black;
     border-radius: 6px;
-    background-color: antiquewhite;
+    background-color: rgb(40, 115, 200);
+    color:antiquewhite;
     user-select: none;
     width: 50px;
-}
-button {
     cursor: pointer;
+}
+#i1o:hover {
+    background-color: rgb(69, 36, 21);
 }
