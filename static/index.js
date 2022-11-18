@@ -1,13 +1,10 @@
-x = 1
 $(() => {
-    $("#b1").click( e => {
-        x = $("#i1").val()
-        $.post("/", { x }, (res) => {
-            $("#o").html(res.x) 
-        })
-    } )
-    $("#i1").mousemove( () => {
-        x = $("#i1").val()
-        $("#i1o").html(x)
-    })
+    $("#b1").click(() =>
+        $.post(
+            "/", 
+            { x: $("#i1").val() },
+            res => $("#o").html(res.x)
+        )
+    )
+    $("#i1").mousemove(() => $("#i1o").html($("#i1").val()))
 })
