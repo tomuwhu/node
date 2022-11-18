@@ -17,7 +17,7 @@ div#o {
     background-color: rgb(40, 115, 200);
     color:antiquewhite;
     user-select: none;
-    width: 50px;
+    width: 70px;
     cursor: pointer;
 }
 #i1o:hover {
